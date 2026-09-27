@@ -65,8 +65,6 @@ The site is written for three concrete kinds of visitors. All three come from Ma
 
 ## 3. User stories
 
-Each story is written in the "As a X, I want Y so that Z" form and maps directly to something on Manoj's resume.
-
 1. **As a recruiter,** I want to see the degree, university, and expected graduation on the homepage hero so that I can confirm eligibility for MS-level roles without opening a resume PDF.
 2. **As a recruiter,** I want to see Manoj's live GitHub contribution graph and LeetCode submission calendar so that I can quickly judge whether he is actively coding right now.
 3. **As a recruiter,** I want a one-click email link so that I can start an outreach without hunting through pages.
