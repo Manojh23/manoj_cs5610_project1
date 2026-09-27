@@ -9,7 +9,7 @@ Email: harridoss.m@northeastern.edu
 
 CS 5610 — Web Development, Northeastern University
 
-**Class link:** [https://johnguerra.co/classes/webDevelopment_online_fall_2026/](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
+**Class link:** <https://johnguerra.co/classes/webDevelopment_online_fall_2026/>
 
 ## Project objective
 
@@ -21,9 +21,19 @@ A small personal homepage built with vanilla HTML5, CSS3, and ES6 JavaScript mod
 - `projects.html` — selected research and course projects.
 - `explore.html` — Research Lab: interactive constellation of research topics, a cross-area idea generator, and a rotating set of open research questions.
 
-## Screenshot
+## Screenshots
 
-![Homepage screenshot](./assets/images/homepage-screenshot.png)
+### Home
+
+![Home page](./assets/images/screenshot-index.png)
+
+### Projects
+
+![Projects page](./assets/images/screenshot-projects.png)
+
+### Research Lab
+
+![Research Lab page](./assets/images/screenshot-explore.png)
 
 ## Folder structure
 
@@ -74,34 +84,13 @@ Both are public third-party endpoints. If they are unavailable the page shows a 
 ```bash
 npm run format        # apply Prettier
 npm run format:check  # verify Prettier formatting
-npm run lint          # run ESLint (uses the class eslint.config.js)
+npm run lint          # run ESLint
 npm run check         # format:check + lint
 ```
 
-## W3C validation
-
-Before submission, deploy the site and validate every HTML page at <https://validator.w3.org/>. Fix any errors reported.
-
-## Deployment (GitHub Pages)
-
-1. Push the project to a GitHub repository.
-2. In the repository, open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select `main` branch and `/ (root)` folder.
-5. Save. GitHub prints the public URL once the build is done.
-6. Open the public URL in an incognito window to confirm all three pages and both live data feeds work.
-
 ## Video
 
-_Record a short narrated public video demonstrating the homepage (with coding activity), the projects page, and the Research Lab. Add the video URL here before submission._
-
-**Video link:** _add here_
-
-## Google Form submission
-
-- Use the deployed public URL.
-- Confirm the thumbnail loads.
-- Test every link in an incognito window before submitting.
+**Video link:** <https://www.youtube.com/watch?v=CN9LVdvP5QM>
 
 ## GenAI use
 
@@ -111,10 +100,6 @@ _Record a short narrated public video demonstrating the homepage (with coding ac
   1. "Build a small personal homepage for a CS master's student using only vanilla HTML, CSS, and ES6 modules; three pages; include a photo, coding activity from GitHub and LeetCode, and an interactive research page."
   2. "Render a GitHub contribution grid and a LeetCode submission calendar with a year selector, using vanilla JavaScript and the public APIs."
   3. "Write a design document with three user personas, ten user stories tied to an MS CS student's resume, and text mockups of each page."
-
-## Code review
-
-_Complete the required course code-review process. Add any evidence link here if the submission instructions ask for it._
 
 ## License
 
