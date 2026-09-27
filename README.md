@@ -9,7 +9,7 @@ Email: harridoss.m@northeastern.edu
 
 CS 5610 — Web Development, Northeastern University
 
-**Class link:** [_Add the exact public class URL from the instructor here before submission._](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
+**Class link:** [https://johnguerra.co/classes/webDevelopment_online_fall_2026/](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 
 ## Project objective
 
