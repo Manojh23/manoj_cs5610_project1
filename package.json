@@ -1,0 +1,23 @@
+{
+  "name": "manoj-harridoss-cs5610-project-1",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CS5610 Project 1 personal homepage built with vanilla HTML, CSS, and ES6 modules.",
+  "scripts": {
+    "start": "serve .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint js/**/*.js",
+    "check": "npm run format:check && npm run lint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.6",
+    "globals": "^16.4.0",
+    "prettier": "^3.6.2",
+    "serve": "^14.2.4"
+  }
+}

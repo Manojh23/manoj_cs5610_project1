@@ -1,0 +1,218 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Manoj Harridoss" />
+    <meta
+      name="description"
+      content="Personal homepage of Manoj Harridoss, a Computer Science graduate student interested in machine learning, NLP, and mechanistic interpretability."
+    />
+    <link rel="icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Manoj Harridoss | Home</title>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-width header-row">
+        <a class="site-name" href="./index.html">Manoj Harridoss</a>
+        <nav class="site-nav" aria-label="Main navigation">
+          <a class="nav-link" href="./index.html">Home</a>
+          <a class="nav-link" href="./projects.html">Projects</a>
+          <a class="nav-link" href="./explore.html">Research Lab</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-width">
+        <div class="hero-layout">
+          <div class="hero-text-col">
+            <p class="eyebrow">
+              Computer Science · Machine Learning · Research
+            </p>
+            <h1>Hi, I’m Manoj.</h1>
+            <p class="hero-text">
+              I am an M.S. Computer Science student at Northeastern University.
+              I am interested in machine learning, NLP, and understanding how
+              large language models represent and use information.
+            </p>
+            <div class="hero-links">
+              <a class="button-link" href="./projects.html">View my work</a>
+              <a class="text-link" href="mailto:harridoss.m@northeastern.edu"
+                >Email me</a
+              >
+            </div>
+          </div>
+          <div class="hero-photo-col">
+            <img
+              class="hero-photo"
+              src="https://github.com/Manojh23.png?size=200"
+              alt="Manoj Harridoss"
+            />
+          </div>
+        </div>
+        <p class="hero-tagline">
+          Currently exploring:
+          <span class="typing-text" id="typing-text" aria-hidden="true"></span
+          ><span class="typing-cursor" aria-hidden="true"></span>
+        </p>
+      </section>
+
+      <section class="content-section page-width" aria-labelledby="about-title">
+        <h2 id="about-title">About me</h2>
+        <p>
+          My work has included mechanistic interpretability for language models,
+          graph-based citation analysis, and self-supervised learning for speech
+          recognition. I enjoy projects where I can combine machine learning
+          experiments with careful evaluation and clear explanations.
+        </p>
+      </section>
+
+      <section
+        class="content-section page-width"
+        aria-labelledby="education-title"
+      >
+        <h2 id="education-title">Education</h2>
+        <div class="simple-list">
+          <article class="list-item">
+            <h3>Northeastern University</h3>
+            <p>
+              M.S. in Computer Science · Sep 2025 – May 2027 · GPA: 3.91/4.0
+            </p>
+          </article>
+          <article class="list-item">
+            <h3>PES University</h3>
+            <p>B.E. in Computer Science · Oct 2021 – May 2025 · GPA: 8.99/10</p>
+          </article>
+        </div>
+      </section>
+
+      <section
+        class="content-section page-width"
+        aria-labelledby="activity-title"
+      >
+        <h2 id="activity-title">Coding activity</h2>
+        <p class="activity-intro">
+          Live snapshots of what I'm building on GitHub and solving on LeetCode.
+        </p>
+
+        <article class="activity-card">
+          <header class="activity-header">
+            <div class="activity-brand">
+              <span class="activity-icon-wrap">
+                <svg
+                  class="activity-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"
+                  />
+                </svg>
+              </span>
+              <div class="activity-brand-text">
+                <p class="activity-name">GitHub</p>
+                <a
+                  class="activity-handle"
+                  href="https://github.com/Manojh23"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >&#64;Manojh23 &#8594;</a
+                >
+              </div>
+            </div>
+            <div
+              class="year-selector"
+              id="gh-year-selector"
+              aria-label="Select GitHub contribution year"
+            ></div>
+          </header>
+          <div
+            id="gh-contribution-grid"
+            class="contribution-grid"
+            aria-label="GitHub contribution calendar"
+          >
+            <p class="chart-msg">Loading contributions&hellip;</p>
+          </div>
+          <ul
+            class="stats-row"
+            id="gh-stats-row"
+            aria-label="GitHub stats"
+          ></ul>
+        </article>
+
+        <article class="activity-card">
+          <header class="activity-header">
+            <div class="activity-brand">
+              <span class="activity-icon-wrap activity-icon-wrap-lc">
+                <svg
+                  class="activity-icon"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <path
+                    d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 1.271 1.818l4.277 4.193.039.038c2.248 2.165 5.852 2.133 8.063-.074l2.396-2.392c.54-.54.54-1.414.003-1.955a1.378 1.378 0 0 0-1.951-.003l-2.396 2.392a3.021 3.021 0 0 1-4.205.038l-.02-.019-4.276-4.193c-.652-.64-.972-1.469-.948-2.263a2.68 2.68 0 0 1 .066-.523 2.545 2.545 0 0 1 .619-1.164L9.13 8.114c1.058-1.134 3.204-1.27 4.43-.278l3.501 2.831c.593.48 1.461.387 1.94-.207a1.384 1.384 0 0 0-.207-1.943l-3.5-2.831c-.8-.647-1.766-1.045-2.774-1.202l2.015-2.158A1.384 1.384 0 0 0 13.483 0zm-2.866 12.815a1.38 1.38 0 0 0-1.38 1.382 1.38 1.38 0 0 0 1.38 1.382H20.79a1.38 1.38 0 0 0 1.38-1.382 1.38 1.38 0 0 0-1.38-1.382z"
+                  />
+                </svg>
+              </span>
+              <div class="activity-brand-text">
+                <p class="activity-name">LeetCode</p>
+                <a
+                  class="activity-handle"
+                  href="https://leetcode.com/u/HManoj/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >&#64;HManoj &#8594;</a
+                >
+              </div>
+            </div>
+            <div
+              class="year-selector"
+              id="lc-year-selector"
+              aria-label="Select LeetCode submission year"
+            ></div>
+          </header>
+          <div
+            id="lc-contribution-grid"
+            class="contribution-grid contribution-grid-lc"
+            aria-label="LeetCode submission calendar"
+          >
+            <p class="chart-msg">Loading submissions&hellip;</p>
+          </div>
+          <ul
+            class="stats-row"
+            id="lc-stats-row"
+            aria-label="LeetCode stats"
+          ></ul>
+        </article>
+      </section>
+
+      <section
+        class="content-section page-width"
+        aria-labelledby="skills-title"
+      >
+        <h2 id="skills-title">Skills</h2>
+        <p>
+          Python, C++, Java, SQL, HTML, CSS, JavaScript, PyTorch, TensorFlow,
+          scikit-learn, Pandas, NumPy, Hugging Face, Git, Docker, and Linux.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="page-width footer-row">
+        <p>© <span class="current-year"></span> Manoj Harridoss</p>
+        <p>
+          <a class="text-link" href="mailto:harridoss.m@northeastern.edu"
+            >harridoss.m@northeastern.edu</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>
