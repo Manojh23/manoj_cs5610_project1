@@ -1,5 +1,7 @@
 # Manoj Harridoss — Personal Homepage
 
+**Live site:** <https://manojh23.github.io/manoj_cs5610_project1/>
+
 ## Author
 
 Manoj Harridoss — MS Computer Science, Northeastern University
@@ -45,7 +47,8 @@ A small personal homepage built with vanilla HTML5, CSS3, and ES6 JavaScript mod
 │   ├── creative.css
 │   └── main.css
 ├── design/
-│   └── design.md
+│   ├── design.md
+│   └── mockups/
 ├── js/
 │   ├── creative.js
 │   └── main.js
@@ -92,14 +95,25 @@ npm run check         # format:check + lint
 
 **Video link:** <https://www.youtube.com/watch?v=CN9LVdvP5QM>
 
-## GenAI use
+## Use of GenAI
 
-- **Model used:** Claude Sonnet 4.6 by Anthropic.
-- **How it was used:** Scaffolding the initial file structure, writing the ES6 modules for the typing animation and the GitHub/LeetCode calendar renderers, generating the CSS palette, and drafting the design document. All content (research descriptions, project entries, thought experiments, personas, user stories) is authored by me and reflects my actual work, education, and interests.
-- **Prompt summary (representative):**
+GenAI was used as a helper for parts of the code and documentation, not to build the whole site. The site idea and all personal content are my own.
+
+- **Tool and model:** Claude (Anthropic), Sonnet 4.6 and Opus 5.5.
+- **What it helped with:**
+  - Setting up the initial file structure.
+  - The ES6 modules for the typing animation and the GitHub/LeetCode calendar renderers.
+  - The CSS color palette.
+  - Drafting and formatting the design document, wireframes, and README, and taking the page screenshots.
+- **What I did myself:** all written content — research descriptions, project entries, thought experiments, personas, and user stories — comes from my own work, education, and interests.
+- **Representative prompts:**
   1. "Build a small personal homepage for a CS master's student using only vanilla HTML, CSS, and ES6 modules; three pages; include a photo, coding activity from GitHub and LeetCode, and an interactive research page."
   2. "Render a GitHub contribution grid and a LeetCode submission calendar with a year selector, using vanilla JavaScript and the public APIs."
   3. "Write a design document with three user personas, ten user stories tied to an MS CS student's resume, and text mockups of each page."
+
+## Design Document
+
+The design document, including the project description, user personas, user stories, and mockups, is in [`design/design.md`](design/design.md).
 
 ## License
 

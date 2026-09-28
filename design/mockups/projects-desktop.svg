@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="690" viewBox="0 0 900 690" role="img" aria-label="Projects page desktop wireframe">
+  <rect width="900" height="690" fill="#ffffff"/>
+  <rect x="0" y="0" width="900" height="50" rx="0" fill="#ffffff" stroke="#dee2e6"/>
+  <text x="30" y="31" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" fill="#212529" text-anchor="start">Manoj Harridoss</text>
+  <text x="640" y="31" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#495057" text-anchor="start">Home</text>
+  <text x="710" y="31" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" fill="#1f4b99" text-anchor="start">Projects</text>
+  <text x="790" y="31" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" fill="#495057" text-anchor="start">Research Lab</text>
+  <text x="60" y="95" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="bold" fill="#1f4b99" text-anchor="start">SELECTED WORK</text>
+  <text x="60" y="135" font-family="Arial, Helvetica, sans-serif" font-size="32" font-weight="bold" fill="#212529" text-anchor="start">Projects and research</text>
+  <rect x="60" y="155" width="252.0" height="6" rx="3" fill="#dee2e6"/>
+  <line x1="60" y1="190" x2="840" y2="190" stroke="#dee2e6"/>
+  <text x="60" y="218" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#495057" text-anchor="start">MASTER'S PROJECT</text>
+  <text x="60" y="242" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#212529" text-anchor="start">Mechanistic Interpretability for LLMs</text>
+  <rect x="440" y="212" width="380" height="6" rx="3" fill="#dee2e6"/>
+  <rect x="440" y="226" width="228.0" height="6" rx="3" fill="#dee2e6"/>
+  <text x="440" y="278" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#495057" text-anchor="start">tool · tool · tool</text>
+  <line x1="60" y1="300" x2="840" y2="300" stroke="#dee2e6"/>
+  <text x="60" y="328" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#495057" text-anchor="start">RESEARCH PUBLICATION</text>
+  <text x="60" y="352" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#212529" text-anchor="start">Detecting Anomalous Self-Citations</text>
+  <rect x="440" y="322" width="380" height="6" rx="3" fill="#dee2e6"/>
+  <rect x="440" y="336" width="228.0" height="6" rx="3" fill="#dee2e6"/>
+  <text x="440" y="388" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#495057" text-anchor="start">tool · tool · tool</text>
+  <line x1="60" y1="410" x2="840" y2="410" stroke="#dee2e6"/>
+  <text x="60" y="438" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#495057" text-anchor="start">RESEARCH INTERNSHIP</text>
+  <text x="60" y="462" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#212529" text-anchor="start">DeepCluster for Speech Recognition</text>
+  <rect x="440" y="432" width="380" height="6" rx="3" fill="#dee2e6"/>
+  <rect x="440" y="446" width="228.0" height="6" rx="3" fill="#dee2e6"/>
+  <text x="440" y="498" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#495057" text-anchor="start">tool · tool · tool</text>
+  <line x1="60" y1="520" x2="840" y2="520" stroke="#dee2e6"/>
+  <text x="60" y="548" font-family="Arial, Helvetica, sans-serif" font-size="10" font-weight="bold" fill="#495057" text-anchor="start">COURSE / RESEARCH</text>
+  <text x="60" y="572" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" fill="#212529" text-anchor="start">Chaos and Forecasting in Sports</text>
+  <rect x="440" y="542" width="380" height="6" rx="3" fill="#dee2e6"/>
+  <rect x="440" y="556" width="228.0" height="6" rx="3" fill="#dee2e6"/>
+  <text x="440" y="608" font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="normal" fill="#495057" text-anchor="start">tool · tool · tool</text>
+  <rect x="0" y="650" width="900" height="40" rx="0" fill="#f8f9fa" stroke="#dee2e6"/>
+  <text x="30" y="675" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#495057" text-anchor="start">© Manoj Harridoss</text>
+  <text x="870" y="675" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" fill="#495057" text-anchor="end">Back to home</text>
+</svg>

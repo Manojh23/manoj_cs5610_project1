@@ -1,20 +1,37 @@
 # Personal Homepage — Design Document
 
 **Author:** Manoj Harridoss
-**Course:** CS 5610 — Web Development (Northeastern University)
+**Course:** [CS 5610 — Web Development (Online), Northeastern University, Fall 2026](https://johnguerra.co/classes/webDevelopment_online_fall_2026/)
 **Project:** Project 1 — Personal Homepage
+**Live site:** https://manojh23.github.io/manoj_cs5610_project1/
 
 ---
 
 ## 1. Project description
 
+### Overview
+
 This project is a small personal website for Manoj Harridoss, a first-year MS Computer Science student at Northeastern University with a background in machine learning research. The site is meant to work like a lightweight online resume that a recruiter, professor, or fellow student can look through in under a minute and understand who Manoj is and what he works on.
+
+### Objective
+
+Build a simple, fast personal homepage that shows who I am, what I have worked on, and how I think about research — with real, live data instead of only claims.
+
+### Pages
 
 The site has three pages:
 
 - **Home (`index.html`)** — introduction, a live GitHub/LeetCode coding activity view, education, and skills.
 - **Projects (`projects.html`)** — a short list of research and course projects with the tools used.
 - **Research Lab (`explore.html`)** — an interactive page that visualises how Manoj's research topics connect, generates cross-area research ideas, and shows a rotating set of open questions he thinks about.
+
+### Technologies
+
+- **HTML5** with semantic elements (`header`, `nav`, `main`, `section`, `article`, `footer`).
+- **CSS3** with Grid, Flexbox, and custom properties. No CSS framework.
+- **JavaScript (ES6+)** written as ES6 modules. No libraries.
+- **Tooling:** ESLint and Prettier.
+- **Hosting:** GitHub Pages.
 
 The whole site is built with vanilla HTML5, CSS3, and ES6 modules. No frontend frameworks, no build step.
 
@@ -35,6 +52,8 @@ The site is written for three concrete kinds of visitors. All three come from Ma
 - See recent activity (GitHub commits, problems solved on LeetCode) as a signal that Manoj is actively coding.
 - Get an email link within one click.
 
+**Frustrations:** long bios before any real work, and portfolios with no sign of recent activity.
+
 **How she reads the site:** lands on the homepage, scans the hero for the degree, checks the coding activity for freshness, opens the Projects page only if the profile looks like a fit.
 
 ### Persona 2 — Research Professor / PhD Advisor
@@ -46,6 +65,8 @@ The site is written for three concrete kinds of visitors. All three come from Ma
 - See published work (Manoj's EANN 2025 self-citation paper).
 - Understand the depth of research areas: mechanistic interpretability, DAS, LLMs, speech.
 - Judge whether the student thinks in research questions or only in tasks.
+
+**Frustrations:** research buried among unrelated coursework, and heavy buzzwords without substance.
 
 **How she reads the site:** opens the Projects page first, then the Research Lab to read the thought experiments and see which topics are connected.
 
@@ -59,7 +80,13 @@ The site is written for three concrete kinds of visitors. All three come from Ma
 - See the tech stack Manoj is comfortable with.
 - Reach out casually via email or GitHub.
 
+**Frustrations:** having to read everything when he only cares about one research area.
+
 **How he reads the site:** clicks through the constellation on the Research Lab page, then goes to Projects, then follows the GitHub link.
+
+### Why these personas
+
+Each persona leads to a different page first: Priya to the homepage and coding activity, Dr. Chen to Projects, and Jordan to the Research Lab. Together they make sure every page has a clear reason to exist.
 
 ---
 
@@ -76,123 +103,73 @@ The site is written for three concrete kinds of visitors. All three come from Ma
 9. **As any visitor,** I want the site to be readable on a phone so that I can look at it while commuting between class buildings.
 10. **As any visitor,** I want the navigation to look identical on every page so that I never get lost.
 
+### Feature coverage
+
+| Feature                       | Stories |
+| ----------------------------- | ------- |
+| Homepage hero (degree, photo) | 1       |
+| GitHub and LeetCode calendars | 2       |
+| Email link                    | 3       |
+| Projects page                 | 4, 8    |
+| Research constellation        | 5, 7    |
+| Thought experiments           | 6       |
+| Responsive layout             | 9       |
+| Shared navigation             | 10      |
+
 ---
 
 ## 4. Design mockups
 
-Text-based wireframes. The real pages follow these layouts.
+Simple wireframes of each page. The real pages follow these layouts.
 
-### 4.1 Home page
+### 4.1 Home page (desktop)
 
-```
-+----------------------------------------------------------------------+
-|  Manoj Harridoss                     Home  Projects  Research Lab    |
-+----------------------------------------------------------------------+
-|  COMPUTER SCIENCE · MACHINE LEARNING · RESEARCH                      |
-|                                                     +-----------+    |
-|  Hi, I'm Manoj.                                     |           |    |
-|  I am an M.S. Computer Science student at           |  photo    |    |
-|  Northeastern University. I am interested in ML,    |           |    |
-|  NLP, and how large language models represent       +-----------+    |
-|  information.                                                        |
-|  [ View my work ]   Email me                                         |
-|  --------------------------------------------------------------      |
-|  Currently exploring: mechanistic interpretability_                  |
-+----------------------------------------------------------------------+
-|  About me                                                            |
-|  Short paragraph about research background.                          |
-+----------------------------------------------------------------------+
-|  Education                                                           |
-|   • Northeastern University — MS CS, Sep 2025 – May 2027             |
-|   • PES University — BE CS, Oct 2021 – May 2025                      |
-+----------------------------------------------------------------------+
-|  Coding activity                                                     |
-|                                                                      |
-|  +-- GitHub card ---------------------------------------+            |
-|  | [icon] GitHub                    2026 2025 2024 ...  |            |
-|  |        @Manojh23 →                                   |            |
-|  |  17 contributions in 2026                            |            |
-|  |  [ green contribution grid ]                         |            |
-|  |  [total] [all-time] [longest streak]                 |            |
-|  +------------------------------------------------------+            |
-|                                                                      |
-|  +-- LeetCode card -------------------------------------+            |
-|  | [icon] LeetCode                          2026 2025    |           |
-|  |        @HManoj →                                     |            |
-|  |  156 submissions in 2025                             |            |
-|  |  [ orange submission grid ]                          |            |
-|  |  [total] [easy] [medium] [hard]                      |            |
-|  +------------------------------------------------------+            |
-+----------------------------------------------------------------------+
-|  Skills                                                              |
-|  Python, C++, Java, SQL, HTML, CSS, JavaScript, PyTorch, ...         |
-+----------------------------------------------------------------------+
-```
+![Home page desktop wireframe](mockups/home-desktop.svg)
 
-### 4.2 Projects page
+- Two-column hero: introduction on the left, circular photo on the right.
+- A typing line under the hero shows what I am currently exploring.
+- GitHub (green) and LeetCode (orange) cards each have a year selector and a row of stats.
 
-```
-+----------------------------------------------------------------------+
-|  Manoj Harridoss                     Home  Projects  Research Lab    |
-+----------------------------------------------------------------------+
-|  SELECTED WORK                                                       |
-|  Projects and research                                               |
-+----------------------------------------------------------------------+
-|  Master's Project  |  Mechanistic Interpretability for LLMs          |
-|                    |  Description of the work.                       |
-|                    |  Python · PyTorch · PyVene · LLMs               |
-+----------------------------------------------------------------------+
-|  Research          |  Detecting Anomalous Self-Citations             |
-|  Publication       |  Published at EANN 2025.                        |
-|                    |  Python · Graph Analysis · LLMs · NLP           |
-+----------------------------------------------------------------------+
-|  Research          |  DeepCluster for Speech Recognition             |
-|  Internship        |  IIIT Bangalore.                                |
-|                    |  Python · PyTorch · DeepCluster · ASR           |
-+----------------------------------------------------------------------+
-|  Course /          |  Chaos and Forecasting in Sports Time Series    |
-|  Research          |  NBA + EPL data.                                |
-|                    |  Python · Time Series · Nonlinear Dynamics      |
-+----------------------------------------------------------------------+
-```
+### 4.2 Home page (mobile)
 
-### 4.3 Research Lab (third page)
+![Home page mobile wireframe](mockups/home-mobile.svg)
 
-```
-+----------------------------------------------------------------------+
-|  Manoj Harridoss                     Home  Projects  Research Lab    |
-+----------------------------------------------------------------------+
-|  INTERACTIVE RESEARCH SPACE                                          |
-|  Research Lab                                                        |
-+----------------------------------------------------------------------+
-|  RESEARCH CONSTELLATION           |  SELECTED TOPIC                  |
-|                                   |                                  |
-|             [ DAS ]               |  Choose a node                   |
-|      [ NLP ]     [ LLMs ]         |                                  |
-|                                   |  (details appear here when       |
-|  [ Time Series ]   [ Graphs ]     |   a topic is clicked)            |
-|             [ Speech ]            |                                  |
-+----------------------------------------------------------------------+
-|  Research idea generator                                             |
-|  Picks two topics and forms a question.                              |
-|  [ Generate an idea ]                                                |
-|  > Could ideas from NLP help design a better experiment for DAS?     |
-+----------------------------------------------------------------------+
-|  THOUGHT EXPERIMENTS                                                 |
-|  Questions I keep returning to                                       |
-|  ┌────────────────────────────────────────────────────────────────┐  |
-|  │ "When a language model solves a reasoning task, is it          │  |
-|  │  understanding — or retrieving a cached pattern?"              │  |
-|  │  ← 1 / 10 →                                                    │  |
-|  └────────────────────────────────────────────────────────────────┘  |
-+----------------------------------------------------------------------+
-```
+- The hero stacks vertically with the photo on top and a full-width button.
+- The three navigation links stay visible, since a menu button would add an extra tap for only three pages.
+- The contribution grids scroll sideways inside their cards instead of shrinking.
+
+### 4.3 Projects page
+
+![Projects page desktop wireframe](mockups/projects-desktop.svg)
+
+- Each project is a row: label and title on the left, description and tools on the right.
+- On mobile each row becomes a single column.
+
+### 4.4 Research Lab
+
+![Research Lab desktop wireframe](mockups/explore-desktop.svg)
+
+- A dark theme so the page feels separate from the resume-style pages.
+- The constellation and the selected-topic panel sit side by side, so a visitor can read a topic without losing their place.
+- The idea generator and thought experiments sit below as full-width cards.
 
 ---
 
 ## 5. Visual design decisions
 
 - **Colour system.** A single blue accent (`#1f4b99`) on the light pages so the interactive elements read as one family. The Research Lab uses a dark background so it feels visually separate from the resume-style pages.
+
+  | Role              | Color     |
+  | ----------------- | --------- |
+  | Text              | `#1f2933` |
+  | Muted text        | `#5d6975` |
+  | Border            | `#d9dee3` |
+  | Surface           | `#f7f8fa` |
+  | Accent            | `#1f4b99` |
+  | Research Lab bg   | `#0b1020` |
+  | GitHub calendar   | `#40c463` |
+  | LeetCode calendar | `#ff8c00` |
+
 - **Layout.** CSS Grid for the multi-column research and project layouts, Flexbox for the header, hero, and stat rows. No CSS framework.
 - **Typography.** System sans-serif stack (Arial / Helvetica) — no web font download, faster load.
 - **Photo.** Circular profile image sourced from the GitHub avatar so it is always current.
