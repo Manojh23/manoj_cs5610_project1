@@ -17,6 +17,8 @@ CS 5610 — Web Development, Northeastern University
 
 A small personal homepage built with vanilla HTML5, CSS3, and ES6 JavaScript modules. The site introduces me, shows what I am working on (with live GitHub and LeetCode activity), lists selected projects, and includes an interactive research page. There is no framework, no build step, and no backend.
 
+A small note, next time try to add a Section with the title "Unique JS Component" or "Creative Addidtion", as its unclear what your addition is and how it works.
+
 ## Pages
 
 - `index.html` — homepage with intro, coding activity (GitHub + LeetCode), education, and skills.
