@@ -76,6 +76,7 @@ A small personal homepage built with vanilla HTML5, CSS3, and ES6 JavaScript mod
 Both are public third-party endpoints. If they are unavailable the page shows a graceful fallback message.
 
 ## Run locally
+Hey a small note, you could have added the Git Clone method at the top as its the most common.
 
 1. Install Node.js.
 2. `npm install`
