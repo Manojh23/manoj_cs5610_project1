@@ -98,12 +98,13 @@ npm run check         # format:check + lint
 ## Use of GenAI
 
 I created the first two pages of the website myself. I used GenAI only to help with the third creative page, Research Lab.
+
 - Tool and model: Claude (Anthropic), Sonnet 4.6 and Opus 5.5.
 - What it helped with: building the interactive research page, including the research constellation, topic descriptions, idea generator, and research question navigation.
 - What I did myself: the first two pages, all personal content, project information, research descriptions, and the overall website idea.
 - Example prompt:
   “Create a dark-themed Research Lab page using vanilla HTML, CSS, and ES6 modules with an interactive research constellation, an idea generator, and research question cards.”
-  
+
 ## Design Document
 
 The design document, including the project description, user personas, user stories, and mockups, is in [`design/design.md`](design/design.md).
