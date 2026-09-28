@@ -109,8 +109,7 @@ GenAI was used as a helper for parts of the code and documentation, not to build
 - **Representative prompts:**
   1. "Build a small personal homepage for a CS master's student using only vanilla HTML, CSS, and ES6 modules; three pages; include a photo, coding activity from GitHub and LeetCode, and an interactive research page."
   2. "Render a GitHub contribution grid and a LeetCode submission calendar with a year selector, using vanilla JavaScript and the public APIs."
-  3. "Write a design document with three user personas, ten user stories tied to an MS CS student's resume, and text mockups of each page."
-
+  
 ## Design Document
 
 The design document, including the project description, user personas, user stories, and mockups, is in [`design/design.md`](design/design.md).
