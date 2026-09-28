@@ -24,7 +24,7 @@ A small personal homepage built with vanilla HTML5, CSS3, and ES6 JavaScript mod
 - `explore.html` — Research Lab: interactive constellation of research topics, a cross-area idea generator, and a rotating set of open research questions.
 
 ## Screenshots
-
+Hey would like to let you know that a GIF of the website would have been more prefferable.
 ### Home
 
 ![Home page](./assets/images/screenshot-index.png)
