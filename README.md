@@ -97,18 +97,12 @@ npm run check         # format:check + lint
 
 ## Use of GenAI
 
-GenAI was used as a helper for parts of the code and documentation, not to build the whole site. The site idea and all personal content are my own.
-
-- **Tool and model:** Claude (Anthropic), Sonnet 4.6 and Opus 5.5.
-- **What it helped with:**
-  - Setting up the initial file structure.
-  - The ES6 modules for the typing animation and the GitHub/LeetCode calendar renderers.
-  - The CSS color palette.
-  - Drafting and formatting the design document, wireframes, and README, and taking the page screenshots.
-- **What I did myself:** all written content — research descriptions, project entries, thought experiments, personas, and user stories — comes from my own work, education, and interests.
-- **Representative prompts:**
-  1. "Build a small personal homepage for a CS master's student using only vanilla HTML, CSS, and ES6 modules; three pages; include a photo, coding activity from GitHub and LeetCode, and an interactive research page."
-  2. "Render a GitHub contribution grid and a LeetCode submission calendar with a year selector, using vanilla JavaScript and the public APIs."
+I created the first two pages of the website myself. I used GenAI only to help with the third creative page, Research Lab.
+- Tool and model: Claude (Anthropic), Sonnet 4.6 and Opus 5.5.
+- What it helped with: building the interactive research page, including the research constellation, topic descriptions, idea generator, and research question navigation.
+- What I did myself: the first two pages, all personal content, project information, research descriptions, and the overall website idea.
+- Example prompt:
+  “Create a dark-themed Research Lab page using vanilla HTML, CSS, and ES6 modules with an interactive research constellation, an idea generator, and research question cards.”
   
 ## Design Document
 
